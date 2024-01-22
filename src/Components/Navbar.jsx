@@ -11,6 +11,7 @@ function Navbar() {
        <Link to='/experience'><li>EXPERIENCE</li></Link> 
        <Link to='/projects'><li>PROJECTS</li></Link> 
        <Link to='/contacts'><li>CONTACT ME</li></Link> 
+       <Link to='/contacts'><li>RESUME</li></Link> 
     </ul>
     
   </nav>
