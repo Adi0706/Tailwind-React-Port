@@ -15,8 +15,8 @@ function Home() {
         Your browser does not support the video tag.
       </video>
       {/* <div className='overlay'></div> */}
-      <div className="text flex items-center justify-center h-96 mt-20">
-        <img src={landingPic} alt='Landing-pic' className='w-56 h-56 rounded-full' />
+      <div className="text flex items-center justify-center h-96 mt-48">
+        <img src={landingPic} alt='Landing-pic' className='w-96 h-80 rounded-full' />
         <p className='text-4xl'>Aditya Bhattacharjee</p>
         <p className='text-lg m-2'>Software Developer</p>
         <span className='flex m-5 gap-7 '>
