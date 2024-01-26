@@ -102,3 +102,44 @@ nav li:hover {
   background: rgba(0, 0, 0, 0.9); 
   z-index: 0;
 } */
+.proj-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.proj-card:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.proj-card:hover .buttons {
+  display: flex;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.buttons button {
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #ffffff; /* Adjust the button background color */
+  color: #000000; /* Adjust the button text color */
+  border: none;
+  cursor: pointer;
+}
+
+/* Add additional styling for your buttons as needed */

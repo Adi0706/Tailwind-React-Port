@@ -8,7 +8,7 @@ function Navbar() {
   <span className='logo'><Link to='/'>ADITYA BHATTACHARJEE</Link></span>
     <ul className=' text-white flex items-center justify-start mr-12'>
        <Link to='/about'><li>ABOUT</li></Link> 
-       <Link to='/experience'><li>EXPERIENCE</li></Link> 
+       {/* <Link to='/experience'><li>EXPERIENCE</li></Link>  */}
        <Link to='/projects'><li>PROJECTS</li></Link> 
        <Link to='/contacts'><li>CONTACT ME</li></Link> 
        <Link to='/contacts'><li>RESUME</li></Link> 
