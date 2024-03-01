@@ -17,6 +17,10 @@ import PostmanIcon from '../Assets/icons/icons8-postman-api-64.png';
 import nodejs from '../Assets/icons/icons8-nodejs-48.png';
 import mongodb from '../Assets/icons/icons8-mongo-db-64.png';
 import { motion } from 'framer-motion';
+import tailwind from '../Assets/icons/tailwind.png'
+import sql from '../Assets/icons/sql.png';
+import redux from '../Assets/icons/redux-icon.png'
+
 
 function About() {
   const icons = [
@@ -32,7 +36,12 @@ function About() {
     { icon: figma },
     { icon: nodejs },
     { icon: mongodb },
+    { icon: tailwind },
+    { icon: sql },
+    { icon: redux },
+    
   ];
+ 
 
   return (
     <>
@@ -41,9 +50,9 @@ function About() {
         <source src={landingVideo} type='video/mp4' />
       </video>
 
-      <div className=' text-white h-screen flex items-center justify-start ml-80'>
+      <div className=' text-white h-screen flex items-center justify-evenly'>
         <div className='about-1 flex flex-col items-center'>
-          <img src={aboutImage} alt='about-image' className='w-72 h-72 rounded-full'></img>
+          <img src={aboutImage} alt='about-image' className='w-56 h-56 rounded-full'></img>
           <div className='text-center max-w-lg mx-auto'>
             <p className='font-mono'>Who am I ? </p>
             <br />
@@ -55,8 +64,8 @@ function About() {
         </div>
         
         <div className=' flex flex-col items-center justify-between '>
-          <img src={ServiceLogo} alt='about-image' className='w-110 h-48'></img>
-          <div className=' grid grid-cols-3 gap-12 p-7 '>
+          <img src={ServiceLogo} alt='about-image' className='w-full h-48 '></img>
+          <div className=' grid grid-cols-3 gap-5 p-2 '>
             {icons.map((item, index) => (
               <motion.div
                 key={index}
